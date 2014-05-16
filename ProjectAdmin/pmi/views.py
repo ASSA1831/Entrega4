@@ -1,0 +1,24 @@
+from django.shortcuts import render, render_to_response
+from django.http import HttpResponse
+
+def crearTarea(request):
+    return render_to_response('agregarTarea.html')
+
+
+def proyectos(request):
+    return render_to_response('proyectos.html')
+
+def informacionDeProyecto(request):
+    return render_to_response('Informacion_de_proyecto.html')
+
+def crearProyecto(request):
+    return render_to_response('crear_proyecto.html')
+
+def informeTareas(request):
+    return render_to_response('informacionDeTareas.html')
+
+def principal(request):
+    return render_to_response('general.html')
+
+def editarProyecto(request):
+    return render_to_response('Informacion_de_proyecto.html')

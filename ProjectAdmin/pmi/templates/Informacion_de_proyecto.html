@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Crear proyecto </title>
+         <link rel="stylesheet" href="/static/boot/css/bootstrap.min.css">
+         <link rel="stylesheet" href="/static/boot/css/example.css">
+         <link rel="stylesheet" href="/static/boot/css/bootstrap-theme.min.css">
+         <link rel="stylesheet" href="/static/boot/css/bootstrap.min.js">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">                
+                <div class="masthead">
+                  
+                    <h3 class="text-muted"> PMI</h3>                    
+                    
+                    <ul class="nav nav-justified" >
+                        <li class="col-md-4 col-lg-4 "><a href="http://127.0.0.1:8000/proyectos/" class="brand">Proyectos</a></li>
+                        <li class="col-md-5 col-lg-5"><a href="http://127.0.0.1:8000/crear_proyecto/" class="brand">Crear proyecto</a></li>
+                        <li class="active col-md-6 col-lg-6"><a href="http://127.0.0.1:8000/Editar_proyecto/" class="brand">Editar proyecto</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <br> 
+            </br>            
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="sidebar-nav">
+                        <div class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="visible-xs navbar-brand">Sidebar menu</span>
+                            </div>
+                            <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">                                
+                                <li ><a href="http://127.0.0.1:8000/Editar_proyecto/informacion_proyecto/">informacion de proyectos</a></li>
+                                <li><a href="http://127.0.0.1:8000/Editar_proyecto/informacion_tareas/">informacion de tareas</a></li>                                                               
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-offset-1 col-lg-6"> 
+            
+                    <form role="form" >
+                        <div class="form-group">
+                            <label for="ejemplo_proyecto_1">Seleccionar proyecto</label>
+                            <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <select id="select-proyecto" class="form-control priority-value">
+                                            <option value="todo">Seleccione proyecto</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>                        
+                        <br></br>
+                        <form role="form" >
+                        <div class="form-group">
+                            <label for="ejemplo_proyecto_1">Nombre del proyecto</label>
+                            <input type="tarea" class="form-control" id="ejemplo_proyecto_1"placeholder="Nombre tarea">
+                        </div>
+                        <div class="form-group">
+                            <label for="ejemplo_proyecto_1">Descripcion del proyecto</label>
+                            <input type="text" class="form-control" id="ejemplo_proyecto_1"placeholder="descripcion del proyecto">
+                            
+                        <div class="form-group">
+                            <label for="ejemplo_fechai_1">Fecha de inicio</label>
+                            <input type="date" class="form-control" id="ejemplo_fechai_1"  >
+                        </div>
+                        <div class="form-group">
+                            <label for="ejemplo_fechaf_1">Fecha final</label>
+                            <input type="date" class="form-control" id="ejemplo_fechaf_1" >
+                        </div>
+                        <br></br>          
+                        <button type="submit" class="btn btn-default col-lg-3 col-offset-5">Guardar</button>
+                        <button type="submit" class="btn btn-default col-lg-3 col-lg-offset-2">Eliminar</button>
+                    </form>
+                </div>
+  
+            </div>
+        </div>
+    </body>
+</html>
